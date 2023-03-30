@@ -1,5 +1,5 @@
 function APropos() {
-    return
+    return "à propos";
 }
 
 export default APropos;

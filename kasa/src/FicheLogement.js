@@ -1,5 +1,5 @@
 function FicheLogement() {
-    return
+    return "Fiche logement"
 }
 
 export default FicheLogement;

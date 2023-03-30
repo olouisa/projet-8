@@ -1,5 +1,5 @@
 function NotFound() {
-    return
+    return "Erreur 404"
 }
 
 export default NotFound;

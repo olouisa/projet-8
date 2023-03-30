@@ -1,5 +1,5 @@
 
 function Home() {
-    return
+    return "Accueil";
 }
 export default Home;
