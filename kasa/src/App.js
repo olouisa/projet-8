@@ -8,7 +8,8 @@ import NotFound from './NotFound';
 import Header from './Header';
 import Footer from  './Footer';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import Card from './Card';
+import Banner from './Banner';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/FicheLogement"  element={<FicheLogement/>}/>
         <Route path="/APropos"  element={<APropos/>}/>
         <Route path="*" element={<NotFound/>}/>
-    </Routes>  
+    </Routes> 
     <Footer/>
     
     </Router>
