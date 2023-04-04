@@ -31,6 +31,7 @@
 {
     height: 68px;
     width: 210px;
+    object-fit: cover;
 
 }
 
@@ -49,4 +50,37 @@ padding-right: 50px;
 
 .Link:hover   {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Link {
+font-size: 12px;
+line-height: 17px;
+padding-right: 15px;
+
+}
+
+.logoDiv {
+    padding-left: 15px;
+
+}
+
+.logoImg{
+height: 47px;
+width: 145px;
+}
+
+
+
+
+    
 }

@@ -35,6 +35,7 @@ body {
        border-radius: 25px;
        width: 100%;
        height: 100%;
+       object-fit: cover;
    }
    
    .TitleBanner {
@@ -47,7 +48,7 @@ body {
    text-align: left;
    color: #FFFFFF;
    top: 21PX;
-   left: 313PX; 
+   left: 300px; 
    
    }
    
@@ -138,4 +139,47 @@ line-height: 17px;
 letter-spacing: 0em;
 text-align: center;
 color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .TitleBanner {
+     
+    left: 20px; 
+    
+    }
+    
+    .Card {
+        width: 40%;
+     
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+
+
+    .bannière {
+        height: 111px;
+        margin-bottom: 5px;
+
+    }
+
+.TitleBanner {
+font-size: 24px;
+line-height: 24px;
+left: 10px;
+top: 10px;
+}
+
+.Gallery {
+    background:white;
+}
+
+.Card {
+    width: 100%;
+}
+
+
+    
 }
