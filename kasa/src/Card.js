@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "./Home.css";
 import Data from "./CardItems";
 
 

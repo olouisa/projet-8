@@ -3,11 +3,12 @@ import './App.css';
 import React from 'react';
 import Home from './Home';
 import FicheLogement from './FicheLogement';
-import APropos from './APropos';
+import APropos from './components/APropos';
 import NotFound from './NotFound';
 import Header from './Header';
 import Footer from  './Footer';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import "./Home.css";
 import Card from './Card';
 import Banner from './Banner';
 
