@@ -17,7 +17,7 @@ function Accordion({title, content}) {
                 return (
                 <div className="accordion">
                 <div className="accordionTitle" onClick={Toggle}>{item.title}<div className="arrow"><img className="arrowimg" src={Arrow} alt="flèche d'ouverture/fermeture"/></div></div>
-                <div className="accordionContent">{item.content}</div>
+                <div className={ !text ? `accordionContent` : `accordionContent_hidden`}>{item.content}</div>
             </div>
                 )
 

@@ -43,6 +43,21 @@
     padding-right: 30px;
 }
 
+.accordionContent_hidden {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    background-color:  #F6F6F6;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+}
+
 .accordionContent {
     width: 100%;
     font-family: Montserrat;
@@ -53,8 +68,5 @@
     text-align: left;
     color: #FF6060;
     background-color:  #F6F6F6;
- 
-
-
-
+   
 }
