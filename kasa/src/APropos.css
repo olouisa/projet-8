@@ -25,15 +25,13 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    padding-left: 15px;
 
 }
 
@@ -60,6 +58,16 @@
 
 .accordionContent {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F6F6F6;
+    padding-bottom: 5px;
+   
+}
+
+.accordionContent2 {
+    width: 95%;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
@@ -70,3 +78,47 @@
     background-color:  #F6F6F6;
    
 }
+
+@media screen and (max-width: 320px) {
+
+.banner2 {
+    width: 336px;
+    height: 223px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.imgBanner2 {
+    border-radius: 10px;
+}
+
+.Accordions {
+    padding-top: 10px;
+}
+
+.accordion {
+    margin-bottom: 5px;
+}
+.accordionTitle {
+    font-size: 13px;
+    line-height: 19px;
+    padding-left: 5px;
+}
+   
+.arrow {
+    padding-right: 10px;
+}
+
+.arrowImg {
+    width: 14px;
+}
+
+.accordionContent_hidden, .accordionContent2 {
+font-size: 12px;
+line-height: 17px;
+padding-top: 5px;
+}
+
+
+    }
+

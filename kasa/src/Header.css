@@ -53,18 +53,35 @@ padding-right: 50px;
 }
 
 @media screen and (max-width: 768px) {
-    
-}
-
-@media screen and (max-width: 320px) {
-
-.header {
+    .header {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .Link {
 font-size: 12px;
 line-height: 17px;
+padding-right: 30px;
+
+}
+
+.logoDiv {
+    padding-left: 30px;
+
+}
+
+.logoImg{
+height: 47px;
+width: 145px;
+}
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+
+.Link {
+
 padding-right: 15px;
 
 }
@@ -73,13 +90,6 @@ padding-right: 15px;
     padding-left: 15px;
 
 }
-
-.logoImg{
-height: 47px;
-width: 145px;
-}
-
-
 
 
     

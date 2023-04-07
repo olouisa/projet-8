@@ -1,7 +1,6 @@
 import "./APropos.css";
 import Arrow from "./Arrow.png";
 import { useState } from "react";
-import Data2 from "./AccordionItems";
 
 
 
@@ -13,18 +12,17 @@ function Accordion({title, content}) {
    }
     return (
         <div className="Accordions">
-            {Data2.map((item) => {
-                return (
+            
                 <div className="accordion">
-                <div className="accordionTitle" onClick={Toggle}>{item.title}<div className="arrow"><img className="arrowimg" src={Arrow} alt="flèche d'ouverture/fermeture"/></div></div>
-                <div className={ !text ? `accordionContent` : `accordionContent_hidden`}>{item.content}</div>
+                <div className="accordionTitle" onClick={Toggle}>{title}<div className="arrow"><img className="arrowImg" src={Arrow} alt="flèche d'ouverture/fermeture"/></div></div>
+                <div className={ !text ? `accordionContent_hidden` : `accordionContent`}><div className="accordionContent2">{content}</div></div>
             </div>
-                )
+                
 
-            })
+            
         
        
-        }
+        
     </div>
     )
 

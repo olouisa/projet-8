@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    height: 149px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.divLogoFooter {
+    height: 39px;
+    width: 122px;
+    padding-bottom: 30px;
+}
+.imgLogoFooter {
+    height: 39px;
+    width: 122px;
+
+
+}
+
+.textFooter {
+    width: 100%;
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+}
+

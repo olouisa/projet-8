@@ -2,22 +2,26 @@ import React from "react";
 import BannerPropos from "./BannerPropos";
 import "./Home.css";
 import "./APropos.css";
+import "./Footer.css"
 import Accordion from "./Accordion";
+import Data2 from "./AccordionItems";
+
 
 
 function APropos() {
-    
-    return (
-<div className="container" > 
-        <BannerPropos/>
-        <Accordion/>
-        {/* <div className="Accordions">
-            <Accordion title="Titre 1" content="Contenu 1" />
-            <Accordion title="Titre 2" content="Contenu 2"/>
-            <Accordion title="Titre 3" content="Contenu 3"/>
-            <Accordion title="Titre 4" content="Contenu 4"/>
 
-        </div> */}
+    return (
+        <div className="container" >
+            <BannerPropos />
+            {
+                Data2.map((item) => {
+                    return (
+                        <Accordion title={item.title} content={item.content} />
+                    )
+                })
+            }
+
+
         </div>
     )
 }

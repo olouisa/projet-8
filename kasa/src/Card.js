@@ -3,23 +3,14 @@ import "./Home.css";
 import Data from "./CardItems";
 
 
-function Card() {
+function Card({title, cover}) {
     return (
-        
-        <div className="Gallery">
-         {Data.map((item) => {
-            return (
+     
                 <div className="Card">
-                   <div className="divImg"><img className="imgCard" src={item.cover} alt="photo"/></div>
-                    <h3 className="TitleCard">{item.title}</h3>
+                   <div className="divImg"><img className="imgCard" src={cover} alt="photo"/></div>
+                    <div className="h3_container"><h3 className="TitleCard">{title}</h3></div>
                 </div>
-            )
-         })
-
-         }
-
-
-        </div>
+          
     )
 }
 

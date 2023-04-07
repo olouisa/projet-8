@@ -9,6 +9,9 @@ import Header from './Header';
 import Footer from  './Footer';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./Home.css";
+import "./Footer.css";
+
+
 // import Card from './Card';
 // import Banner from './Banner';
 

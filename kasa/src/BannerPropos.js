@@ -5,7 +5,7 @@ import ImgP from "./IMGbanner2.png";
 
 function BannerPropos () {
     return (
-    <div className="banner">
+    <div className="banner banner2">
                 <div className="imgBannerdiv"><img className="imgBanner" src={ImgP} alt="Image de montagnes"/></div>
 
 
