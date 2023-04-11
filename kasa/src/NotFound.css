@@ -8,8 +8,7 @@
 }
 
 .ErrorTitle {
-    Width: 597px;
-    Height: 263px;
+    Width: 50%;
 }
 
 .ErrorImg {
@@ -23,10 +22,13 @@
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: #FF6060;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 
 
 }
@@ -37,6 +39,21 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: #FF6060;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .ErrorMessage {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .ErrorLink {
+        font-size: 14px;
+        line-height: 20px;
+
+
+    }
 }
