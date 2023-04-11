@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-
+import "./NotFound.css";
+import ErrorImg from "./404.png";
 
 
 function NotFound() {
     return (
-        <div>
-        <h1>404</h1>
-        <h3>Oups! La page que vous demandez n'existe pas.</h3>
-        <Link to="/">Retourner vers la page d'accueil</Link>
+        <div className="ErrorContainer">
+        <h1 className="ErrorTitle"><img className="ErrorImg" src={ErrorImg} alt="Erreur 404"/></h1>
+        <h3 className="ErrorMessage">Oups! La page que vous demandez n'existe pas.</h3>
+        <Link to="/" className="ErrorLink">Retourner vers la page d'accueil</Link>
         </div>
     )
 }
