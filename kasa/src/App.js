@@ -7,7 +7,7 @@ import APropos from './APropos';
 import NotFound from './NotFound';
 import Header from './Header';
 import Footer from  './Footer';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 import "./Home.css";
 import "./Footer.css";
 
@@ -21,7 +21,7 @@ function App() {
     <Header/>
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/FicheLogement"  element={<FicheLogement/>}/>
+        <Route path="/FicheLogements"  element={<FicheLogement/>}/>
         <Route path="/APropos"  element={<APropos/>}/>
         <Route path="*" element={<NotFound/>}/>
     </Routes> 

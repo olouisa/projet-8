@@ -5,17 +5,21 @@ import SlidesBanner from "./SlidesBanner";
 import "./FicheLogement.css";
 import Accordion from "./Accordion";
 
-
+ 
 function FicheLogement() {
+
+    
     return (
         <div className="container">
         <SlidesBanner />
         <div className="main">
             <div className="left_column">
-                <h1 className="title"></h1>
+                <h1 className="title">{Data.title}</h1>
                 <h3 className="location"></h3>
                 <div className="tags"></div>
-                <Accordion title="Description" />
+                <Accordion key={Data.id} title="Description" content={Data.description} />
+                {console.log(Data.id)}
+                {console.log(Data.description)}
             </div>
              <div className="right_column">
                 <div className="name_and_photo">

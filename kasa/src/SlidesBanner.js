@@ -4,17 +4,19 @@ import pictures from "./CardItems";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
-function SlidesBanner({item}){
+function SlidesBanner(){
 
 
     <Carousel className="Carousel">
-       
-        { pictures.map((item) => {
+       <div>
+        { Data.map((item) => {
+            console.log(Data.title);
         return (
              <div>
-        <img className="SlidePicture" src={item.pictures} alt="" />
+        <img className="SlidePicture" src={pictures} alt="" />
          </div>
         )})}
+        </div>
        
     </Carousel>
 
