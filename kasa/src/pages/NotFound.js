@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./NotFound.css";
-import ErrorImg from "./404.png";
+import "../styles/NotFound.css";
+import ErrorImg from "../assets/404.png";
 
 
 function NotFound() {

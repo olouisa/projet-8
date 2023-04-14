@@ -1,10 +1,10 @@
 import React from "react";
-import BannerPropos from "./BannerPropos";
-import "./Home.css";
-import "./APropos.css";
-import "./Footer.css"
-import Accordion from "./Accordion";
-import Data2 from "./AccordionItems";
+import BannerPropos from "../components/BannerPropos";
+import "../styles/Home.css";
+import "../styles/APropos.css";
+import "../styles/Footer.css"
+import Accordion from "../components/Accordion";
+import Data2 from "../Lists/AccordionItems";
 
 
 

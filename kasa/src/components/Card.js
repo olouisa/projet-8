@@ -1,16 +1,16 @@
 import React from "react";
-import "./Home.css";
-import Data from "./CardItems";
+import "../styles/Home.css";
+import Data from "../Lists/CardItems";
 import { Link, useNavigate } from "react-router-dom";
 
 
 
-function Card({title, cover}) {
+function Card({title, cover, id}) {
     let navigate = useNavigate();
 
     const propriete = () => {
         console.log("click");
-        navigate("/FicheLogements");
+        navigate("/FicheLogements/"+id);
         
     }
     

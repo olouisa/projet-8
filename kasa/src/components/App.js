@@ -1,15 +1,15 @@
 // import logo from './logo.svg';
-import './App.css';
+import "../styles/App.css";
 import React from 'react';
-import Home from './Home';
-import FicheLogement from './FicheLogement';
-import APropos from './APropos';
-import NotFound from './NotFound';
+import Home from '../pages/Home';
+import FicheLogement from '../pages/FicheLogement';
+import APropos from '../pages/APropos';
+import NotFound from '../pages/NotFound';
 import Header from './Header';
 import Footer from  './Footer';
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
-import "./Home.css";
-import "./Footer.css";
+import "../styles/Home.css";
+import "../styles/Footer.css";
 
 
 // import Card from './Card';
@@ -21,7 +21,7 @@ function App() {
     <Header/>
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/FicheLogements"  element={<FicheLogement/>}/>
+        <Route path="/FicheLogements/:id"  element={<FicheLogement/>}/>
         <Route path="/APropos"  element={<APropos/>}/>
         <Route path="*" element={<NotFound/>}/>
     </Routes> 

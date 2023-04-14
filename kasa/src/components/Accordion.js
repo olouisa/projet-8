@@ -1,5 +1,5 @@
-import "./APropos.css";
-import Arrow from "./Arrow.png";
+import "../styles/APropos.css";
+import Arrow from "../assets/Arrow.png";
 import { useState } from "react";
 
 

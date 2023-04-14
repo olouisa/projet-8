@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
-import Data from "./CardItems";
-import ImgP from "./IMGbanner2.png";
+import "../styles/Home.css";
+import Data from "../Lists/CardItems";
+import ImgP from "../assets/IMGbanner2.png";
 
 function BannerPropos () {
     return (
