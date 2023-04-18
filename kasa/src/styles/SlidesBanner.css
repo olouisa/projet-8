@@ -1,10 +1,11 @@
 .slidesBanner {
     width: 90%;
     height: 415px;
+    position: relative;
+
 }
 
 .slides {
-    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -15,16 +16,16 @@
     border-radius: 0px;
 
     position: absolute;
-    top: 310px;
-    right: 77px;
+    top: 169px;
+    right: 40px;
 }
 
 .left_arrow {
     height: 79px;
     width: 46px;
     position: absolute;
-    top: 310px;
-    left: 77px;
+    top: 169px;
+    left: 40px;
 }
 
 .left_arrow_img,
@@ -37,4 +38,49 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.pagination {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    bottom: 14px;
+    left: 245px;
+    right: 245px;
+    color: white;
+    font-variant-numeric: tabular-nums;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .slidesBanner {
+        height: 255px;
+    }
+
+
+    .right_arrow,
+    .left_arrow {
+        height: 19px;
+        width: 11px;
+    }
+
+    .right_arrow {
+        top: 137px;
+        right: 18px;
+    }
+
+    .left_arrow {
+        top: 137px;
+        left: 18px;
+    }
+
+    .pagination {
+        left: 144px;
+        right: 135px;
+    }
 }

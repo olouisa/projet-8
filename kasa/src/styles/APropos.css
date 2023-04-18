@@ -6,6 +6,7 @@
     margin-bottom: 40px;
     width: 100%;
 }
+
 .Accordions {
     width: 80%;
     display: flex;
@@ -13,15 +14,16 @@
     justify-content: center;
     align-items: center;
 }
+
 .accordion {
-    width: 100%;
+    width: 90%;
     margin-bottom: 25px;
- 
+
 
 }
 
 .accordionTitle {
-    background-color:#FF6060;
+    background-color: #FF6060;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
-    background-color:  #F6F6F6;
+    background-color: #F6F6F6;
     visibility: hidden;
     opacity: 0;
     height: 0px;
@@ -61,9 +63,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #F6F6F6;
+    background-color: #F6F6F6;
     padding-bottom: 5px;
-   
+
 }
 
 .accordionContent2 {
@@ -75,50 +77,54 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
-    background-color:  #F6F6F6;
-   
+    background-color: #F6F6F6;
+
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-.banner2 {
-    width: 336px;
-    height: 223px;
-    width: 95%;
-    border-radius: 10px;
-}
-
-.imgBanner2 {
-    border-radius: 10px;
-}
-
-.Accordions {
-    padding-top: 10px;
-}
-
-.accordion {
-    margin-bottom: 5px;
-}
-.accordionTitle {
-    font-size: 13px;
-    line-height: 19px;
-    padding-left: 5px;
-}
-   
-.arrow {
-    padding-right: 10px;
-}
-
-.arrowImg {
-    width: 14px;
-}
-
-.accordionContent_hidden, .accordionContent2 {
-font-size: 12px;
-line-height: 17px;
-padding-top: 5px;
-}
-
-
+    .banner2 {
+        width: 336px;
+        height: 223px;
+        width: 95%;
+        border-radius: 10px;
     }
 
+    .imgBanner2 {
+        border-radius: 10px;
+    }
+
+    .Accordions {
+        padding-top: 10px;
+    }
+
+    .accordion {
+        margin-bottom: 5px;
+    }
+
+    .accordionTitle {
+        font-size: 13px;
+        line-height: 19px;
+        padding-left: 5px;
+        height: 30px;
+        height: 25px;
+        padding-top: 7px;
+    }
+
+    .arrow {
+        padding-right: 10px;
+    }
+
+    .arrowImg {
+        width: 14px;
+    }
+
+    .accordionContent_hidden,
+    .accordionContent2 {
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 5px;
+    }
+
+
+}

@@ -1,37 +1,49 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .main {
     display: flex;
+    flex-direction: column;
+
     justify-content: space-between;
     align-items: center;
     width: 90%;
 }
 
+.colums {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 .left_column {
     display: flex;
+    justify-content: center;
+
     flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    width: 50%;
+    align-items: left;
+    width: 60%;
 }
 
 .right_column {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    width: 50%;
+    justify-content: center;
+    align-items: right;
+    width: 40%;
 
 }
 
-.Accordions,
+/* .Accordions,
 .accordion {
     width: 100%;
-}
+} */
 
 .title {
     font-family: Montserrat;
@@ -41,6 +53,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
+    margin-bottom: 0px;
 
 
 }
@@ -53,6 +66,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
+    margin-top: 5px;
 }
 
 .tags {
@@ -77,4 +91,109 @@
     align-items: center;
     gap: 15px;
     width: 100%;
+}
+
+.name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+    padding-right: 16px;
+    width: 15%;
+}
+
+.photo {
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+    /* background: #C4C4C4; */
+
+
+}
+
+.photo_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+.name_and_photo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rating {
+    text-align: end;
+}
+
+.Accordions2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 45px;
+    width: 105%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .colums {
+        flex-direction: column;
+
+    }
+
+    .right_column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left_column {
+        width: 100%;
+    }
+
+    .Accordions2 {
+        flex-direction: column;
+        align-items: center;
+        width: 135%;
+        gap: 0px;
+    }
+
+    .tags {
+        font-size: 10px;
+        line-height: 14px;
+        height: 18px;
+        width: 84px;
+        border-radius: 5px;
+
+
+    }
+
+    .photo {
+        height: 32px;
+        width: 32px;
+
+    }
+
+    .name {
+        font-size: 12px;
+        line-height: 17px;
+    }
 }

@@ -11,16 +11,44 @@ import { useLogement } from "../Hooks";
 
 
 function SlidesBanner({ id, img }) {
-    const {logement} = useLogement();
+    const { logement } = useLogement();
     useEffect(() => {
         console.log(logement);
-        
-    }, [])
+        console.log(logement.length);
+
+
+    }, []);
+
+    const [Image, setImage] = useState(0);
+
+
+    const Next = () => {
+        console.log(logement.length);
+        console.log("click");
+        setImage((Image + 1) % img.length);
+    }
+
+    const Previous = () => {
+        console.log("click");
+        setImage((Image - 1 + img.length) % img.length);
+    }
+
     return (
+        // <Carousel>
+
+        //     {img.map((item, index) => {
+        //         return (
+        //             <div className="slides"><img className="slidesImg" src={item} alt="" /></div>
+        //         )
+        //     })}
+        // </Carousel>
+
+
         <div className="slidesBanner">
-            <div className="slides"><img  className="slidesImg" src={img[0]} alt="" /></div>
-            <div className="right_arrow"><img className="right_arrow_img" src={Right_Arrow} alt="Flèche droite" /></div>
-            <div className="left_arrow"><img className="left_arrow_img" src={Left_Arrow} alt="Flèche gauche" /></div>
+            <div className="slides"><img className="slidesImg" src={img[Image]} alt="" /></div>
+            <div className="right_arrow" onClick={Next} ><img className="right_arrow_img" src={Right_Arrow} alt="Flèche droite" /></div>
+            <div className="left_arrow" onClick={Previous}><img className="left_arrow_img" src={Left_Arrow} alt="Flèche gauche" /></div>
+            <div className="pagination">{img.indexOf(setImage+1)}/{img.length}</div>
 
 
         </div>
