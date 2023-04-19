@@ -46,7 +46,7 @@ function FicheLogement() {
                     <div className="Accordions2">
                         <Accordion title="Description" content={logement.description} />
 
-                        <Accordion title="Équipements" content={logement.equipments} />
+                        <Accordion title="Équipements" content={logement.equipments.map} />
                     </div>
                 
             </div>

@@ -48,7 +48,7 @@ function SlidesBanner({ id, img }) {
             <div className="slides"><img className="slidesImg" src={img[Image]} alt="" /></div>
             <div className="right_arrow" onClick={Next} ><img className="right_arrow_img" src={Right_Arrow} alt="Flèche droite" /></div>
             <div className="left_arrow" onClick={Previous}><img className="left_arrow_img" src={Left_Arrow} alt="Flèche gauche" /></div>
-            <div className="pagination">{img.indexOf(setImage+1)}/{img.length}</div>
+            <div className="pagination">{Image+1}/{img.length}</div>
 
 
         </div>
