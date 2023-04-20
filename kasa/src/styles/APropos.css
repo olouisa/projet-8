@@ -100,6 +100,7 @@
 
     .accordion {
         margin-bottom: 5px;
+        border-radius: 5px;
     }
 
     .accordionTitle {
@@ -109,6 +110,7 @@
         height: 30px;
         height: 25px;
         padding-top: 7px;
+        border-radius: 5px;
     }
 
     .arrow {
