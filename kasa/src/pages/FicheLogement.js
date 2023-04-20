@@ -50,9 +50,8 @@ function FicheLogement() {
 
                     <Accordion title="Équipements" content={logement.equipments.map((item) => {
                         return (
-                            <ul className="list">
                                 <li className="listElement">{item}</li>
-                            </ul>)
+                           )
                     })} />
 
                 </div>
