@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLogement } from '../Hooks';
-import  "../styles/Stars.css";
+import  "../styles/Stars.css"
 
 const fullStars = [
     <i className="fa-solid fa-star" style={{ color: "#FF6060" }}></i>,
@@ -24,7 +24,6 @@ const emptyStars = [
 
 
 function Stars({ rating }) {
-    const length = emptyStars.length;
     useEffect(() => {
         console.log(fullStars);
         console.log(emptyStars.length);
@@ -35,14 +34,14 @@ function Stars({ rating }) {
     const { logement } = useLogement();
     return (
         <div className="stars">
-            {fullStars.slice(5 - rating).map((item) => {
+            {fullStars.slice(5 - rating).map((item, index) => {
                 return (
-                    <span>{item}</span>
+                    <span key={index}>{item}</span>
                 )
             })}
-      {emptyStars.slice(rating).map((item) => {
+      {emptyStars.slice(rating).map((item, index) => {
                 return (
-                    <span>{item}</span>
+                    <span key={index}>{item}</span>
                 )
             })}
 

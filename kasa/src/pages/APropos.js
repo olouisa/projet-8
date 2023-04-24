@@ -16,7 +16,7 @@ function APropos() {
             {
                 Data2.map((item) => {
                     return (
-                        <Accordion title={item.title} content={item.content} />
+                        <Accordion key={item.id} id={item.id} title={item.title} content={item.content} />
                     )
                 })
             }

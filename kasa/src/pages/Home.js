@@ -11,7 +11,7 @@ function Home() {
         <div className="Gallery">
             {
                 logement.map((item) => {
-                    return ( <Card id={item.id} title={item.title} cover={item.cover}  /> 
+                    return ( <Card key={item.id}  id={item.id} title={item.title} cover={item.cover}  /> 
                     )
 
                 })

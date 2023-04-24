@@ -1,4 +1,5 @@
 import React from "react";
+import Data2 from "../Lists/AccordionItems";
 import Data from "../Lists/CardItems";
 import { Link, useParams } from "react-router-dom";
 import SlidesBanner from "../components/SlidesBanner";
@@ -27,7 +28,7 @@ function FicheLogement() {
                         <div className="tags_container">
                             {logement.tags.map((tag) => {
                                 return (
-                                    <div className="tags">{tag}</div>
+                                    <div key={tag} className="tags">{tag}</div>
 
                                 )
                             })}</div>
@@ -48,9 +49,9 @@ function FicheLogement() {
                     <Accordion title="Description" content={logement.description} />
 
 
-                    <Accordion title="Équipements" content={logement.equipments.map((item) => {
+                    <Accordion  title="Équipements" content={logement.equipments.map((item) => {
                         return (
-                                <li className="listElement">{item}</li>
+                                <li key={item} className="listElement">{item}</li>
                            )
                     })} />
 
