@@ -28,6 +28,10 @@
     left: 40px;
 }
 
+.arrows_hidden {
+    display: none;
+}
+
 .left_arrow_img,
 .right_arrow_img {
     width: 100%;
@@ -56,6 +60,9 @@
 
 }
 
+.pagination_hidden {
+    display: none;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
     .slidesBanner {
