@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import Data from "../Lists/fichierJSON.json";
 
 export function useLogement() {

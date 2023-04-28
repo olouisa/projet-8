@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useLogement } from '../Hooks';
 import  "../styles/Stars.css"
 
 const fullStars = [
@@ -27,11 +26,9 @@ function Stars({ rating }) {
     useEffect(() => {
         console.log(fullStars);
         console.log(emptyStars.length);
-        console.log(logement);
         console.log(rating);
     }, []);
 
-    const { logement } = useLogement();
     return (
         <div className="stars">
             {fullStars.slice(5 - rating).map((item, index) => {

@@ -1,13 +1,10 @@
 import React from "react";
-import Data2 from "../Lists/AccordionItems";
-import Data from "../Lists/CardItems";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import SlidesBanner from "../components/SlidesBanner";
 import Accordion from "../components/Accordion";
 import "../styles/FicheLogement.css";
 import { useOneLogement } from "../Hooks";
 import Stars from "../components/Stars";
-import Stars2 from "../components/Stars2";
 
 
 

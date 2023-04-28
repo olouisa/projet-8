@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import Data from "../Lists/CardItems";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
