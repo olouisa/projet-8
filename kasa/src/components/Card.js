@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Home.css";
-import { useNavigate } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
+import NotFound from "../pages/NotFound";
 
 
 
@@ -9,9 +10,9 @@ function Card({title, cover, id}) {
 
     const propriete = () => {
         console.log("click");
-        navigate("/FicheLogements/"+id);
-        
+      navigate("/FicheLogements/"+id)
     }
+
     
     return (
      

@@ -5,6 +5,7 @@ import Accordion from "../components/Accordion";
 import "../styles/FicheLogement.css";
 import { useOneLogement } from "../Hooks";
 import Stars from "../components/Stars";
+import NotFound from "./NotFound";
 
 
 
@@ -15,6 +16,7 @@ function FicheLogement() {
 
 
     return (
+        logement ?
         <div className="container">
             <SlidesBanner img={logement.pictures} />
             <div className="main">
@@ -55,7 +57,7 @@ function FicheLogement() {
                 </div>
 
             </div>
-        </div>
+        </div> : <NotFound/>
 
     )
 }
