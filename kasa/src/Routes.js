@@ -5,11 +5,8 @@ import APropos from './pages/APropos';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
-import { useLogement } from './Hooks';
-import { useOneLogement } from './Hooks';
-import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 
 
 function RoutesApp() {
